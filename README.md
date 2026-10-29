@@ -1,5 +1,7 @@
 # DupNest
 
+[![npm beta version](https://img.shields.io/npm/v/dupnest/beta)](https://www.npmjs.com/package/dupnest)
+
 **Public beta · Linux only · Node.js 24+**
 
 A CLI to find duplicate files, organize folders, and clean supported developer caches.
