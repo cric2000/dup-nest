@@ -1,6 +1,6 @@
 {
   "name": "dupnest",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0-beta.2",
   "description": "Organize files. Remove duplicates. Reclaim disk space.",
   "type": "module",
   "bin": {

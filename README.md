@@ -1,21 +1,21 @@
 # DupNest
 
-A Linux CLI to find duplicate files, organize folders, and clean supported developer caches. Requires **Node.js 24+**. File cleanup also requires `gio` and desktop Trash support.
+**Public beta · Linux only · Node.js 24+**
+
+A CLI to find duplicate files, organize folders, and clean supported developer caches.
 
 ## Install and run
 
-From the project directory:
-
 ```bash
-npm install --global .
+npm install --global dupnest@beta
 dupnest --help
+dupnest scan ~/Downloads
 ```
 
-To run directly without installing:
+File cleanup requires `gio` and working desktop Trash support. On Ubuntu or Debian, install `gio` with:
 
 ```bash
-node bin/dupnest.js --help
-node bin/dupnest.js scan ~/Downloads
+sudo apt install libglib2.0-bin
 ```
 
 ## Commands
@@ -100,6 +100,19 @@ GRADLE_USER_HOME=/absolute/gradle-home dupnest dev scan --verbose
 
 ## Development
 
+Clone the source and run it directly:
+
+```bash
+git clone https://github.com/cric2000/dup-nest.git
+cd dup-nest
+node bin/dupnest.js --help
+node bin/dupnest.js scan ~/Downloads
+```
+
+To install your checkout globally, run `npm install --global .` from the project directory.
+
+Run the development checks from the checkout:
+
 ```bash
 npm test          # Run tests
 npm run check    # Check JavaScript syntax
@@ -110,4 +123,4 @@ The verification command cleans up its temporary package and installation. It do
 
 ## License
 
-[MIT](LICENSE).
+[MIT](https://github.com/cric2000/dup-nest/blob/main/LICENSE).
