@@ -1,17 +1,43 @@
 {
   "name": "dupnest",
-  "version": "1.0.0",
+  "version": "1.0.0-beta.1",
   "description": "Organize files. Remove duplicates. Reclaim disk space.",
   "type": "module",
-  "bin": { "dupnest": "bin/dupnest.js" },
-  "engines": { "node": ">=24" },
-  "os": ["linux"],
+  "bin": {
+    "dupnest": "bin/dupnest.js"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "os": [
+    "linux"
+  ],
   "license": "MIT",
-  "files": ["bin/", "src/", "README.md", "LICENSE"],
+  "files": [
+    "bin/",
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "test": "node --test --test-isolation=none test/*.test.js",
     "check": "for file in bin/*.js src/*.js test/*.js scripts/*.js; do node --check \"$file\" || exit; done",
     "verify": "node scripts/verify-release.js"
   },
-  "keywords": ["duplicates", "organizer", "trash", "cleanup", "linux", "cli"]
+  "keywords": [
+    "duplicates",
+    "organizer",
+    "trash",
+    "cleanup",
+    "linux",
+    "cli"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cric2000/dup-nest.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cric2000/dup-nest/issues"
+  },
+  "homepage": "https://github.com/cric2000/dup-nest#readme"
 }
